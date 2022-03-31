@@ -9,7 +9,7 @@ if (testPass.length < 3 || testPass.length > 20) {
 } else {
   let hasBigChars = false;
   let hasNumbers = false;
-  for (let i = 0; i < testPass.length; i += 1) {
+  for (let i = 0; i < testPass.length; i += 1) {    
     const currChar = testPass[i];
     console.log(currChar);
     const charAsNum = Number(currChar);
