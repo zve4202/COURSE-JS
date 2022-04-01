@@ -1,6 +1,7 @@
-const temperatureInCelsius = prompt("Введите температуру в градусах Цельсия");
+let temperatureInCelsius = prompt("Введите температуру в градусах Цельсия");
+temperatureInCelsius = Number(temperatureInCelsius);
 
-if (temperatureInCelsius == 0) {
+if (temperatureInCelsius === 0) {
   alert("0 градусов по Цельсию - это температура замерзания воды");
 } else if (temperatureInCelsius > 0) {
   alert(

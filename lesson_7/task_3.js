@@ -1,6 +1,6 @@
 const salaryOfJuniorDeveloper = 500;
 const numberOfJuniorDevelopers = 3;
-let taxPercentage = 13;
+const taxPercentage = 13;
 let totalJuniorDevelopersSalary = 0;
 
 for (let i = 0; i < numberOfJuniorDevelopers; i += 1) {
