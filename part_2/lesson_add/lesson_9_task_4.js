@@ -4,6 +4,10 @@ const matrix = [
   [7, 8, 9],
 ];
 
-const flatArray = [...matrix[0], ...matrix[1], ...matrix[2]]; 
+// const flatArray = [...matrix[0], ...matrix[1], ...matrix[2]]; 
+
+const flatArray = matrix.reduce((acc, array) => {
+  return [...acc, ...array];
+}, []);
 
 console.log(flatArray);
