@@ -2,7 +2,7 @@ const PHOTOS_URL = "https://jsonplaceholder.typicode.com/photos";
 const photosContainer = document.querySelector("#data-container");
 
 const toggleLoader = () => {
-  const loaderElement = usersList.querySelector("#loader");
+  const loaderElement = photosContainer.querySelector("#loader");
   const hiddenExists = loaderElement.getAttribute("hidden") !== null;
   if (hiddenExists) {
     loaderElement.removeAttribute("hidden");
@@ -29,8 +29,8 @@ const createPhotoItem = (url, title) => {
 
 const getFirstPhoto = (photosIds) => {
   toggleLoader();
-  const promises = userIds.map((id) => {
-    return photosIds.map((id) => fetch(`${PHOTOS_URL}/${id}`));
+  const promises = photosIds.map((id) => {
+    return fetch(`${PHOTOS_URL}/${id}`);
   });
 
   Promise.race(promises)
